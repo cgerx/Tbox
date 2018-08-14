@@ -78,4 +78,14 @@ public class Assert {
             throw new TboxException(maxMsg);
         }
     }
+
+
+    public static void isTelephone(String text, String message){
+        isTrue(StringTool.isTelephone(text), message);
+    }
+
+
+    public static void isEmail(String text, String message){
+        isTrue(StringTool.isEmail(text), message);
+    }
 }
